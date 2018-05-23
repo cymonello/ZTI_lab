@@ -15,9 +15,6 @@ public class UserAccessAspect {
 	
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 	
-	//What kind of method calls I would intercept
-	//execution(* PACKAGE.*.*(..))
-	//Weaving & Weaver
 	@Before("execution(* zti.aspectj.lab.aop.data.*.*(..))")
 	public void before(JoinPoint joinPoint){
 		//Advice
