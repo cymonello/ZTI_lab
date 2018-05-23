@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import zti.aspectj.lab.aop.data.Dao1;
-import zti.aspectj.lab.aop.TrackTime;
+//import zti.aspectj.lab.aop.TrackTime;
 
 @Service
 public class Controller1 {
@@ -15,7 +15,7 @@ public class Controller1 {
 	@Autowired
 	private Dao1 dao1;
 	
-	@TrackTime
+	//@TrackTime
 	public String calculateSomething(){
 
 		String value = dao1.retrieveSomething();
